@@ -1,0 +1,23 @@
+[
+    {
+        "sources": [
+            {
+                "name": "claims",
+                "path": "input"
+            },
+            {
+                "name": "contracts",
+                "path": "input"
+            }
+        ],
+        "targets": [
+            {
+                "name": "transactions",
+                "format": "parquet",
+                "path": "output",
+                "table_name": "TRANSACTIONS",
+                "api_url_claim_id": "https://api.hashify.net/hash/md4/hex?value="
+            }
+        ]
+    }
+]
