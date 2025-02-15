@@ -66,7 +66,7 @@ I will also mention here the different tests that will be used in this project.
 
 I will mention here some remarks to what I would do in case this would be a real case.
 
-Since, we would be using any of the Clouds, we would need to `Extract` the files from different and more difficult places such as Folder inside of the raw Blob Container of your Azure Storage Account in Production.
+Since, we would be using any of the Clouds, we would need to `Extract` the files from different and more difficult places such as a folder inside of the raw Blob Container of your Azure Storage Account in Production.
 
 The same hapens with the write task, the output location is not very likely to happen in productive use cases. Instead, we should need to write to a Bronze or Silver/Gold (in our case) folder inside of a blob in Azure and then some external tables in Databricks could be pointing to this folders, so Data Engineers, Analysts, or other users would use them in that platform.
 
