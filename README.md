@@ -73,3 +73,7 @@ The same hapens with the write task, the output location is not very likely to h
 I would have create intermediate outputs folder for claims and contracts where this stage would represent the bronze layer (files in parquet format but still without transformations applied)
 
 Finally, in case we would be getting daily transactions I would do to not overwrite the transactions every time the script runs, but be to upsert the data ( Insert in case the data doesn't already exist, or update some fields in case it exists)
+
+## License
+
+Private repository - All rights reserved
